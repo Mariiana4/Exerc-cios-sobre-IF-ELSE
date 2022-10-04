@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta cherset="utf-8"> 
+		<title>2. Média de notas</title>
+	</head>
+
+	<body>
+	<!--EXERCÍCIO 2 
+		
+	Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+		A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+		A mensagem "Reprovado", se a média for menor do que sete;
+		A mensagem "Aprovado com Distinção", se a média for igual a dez. -->
+
+		Escreva a primeira nota: <input type="number" id="nota1"><br><br>
+		Escreva a segunda nota: <input type="number" id="nota2"><br><br>
+		<button onclick="enviar()">Enviar</button><br><br>
+
+		<script>
+			function enviar (){
+				var nota1 = parseInt(document.getElementById("nota1").value);
+				var nota2 = parseInt(document.getElementById("nota2").value);
+				var media = parseInt((nota1+nota2)/2);
+
+
+				if (media==10){
+					alert("Aprovado com distinção.");
+				}
+				else if(media>=7){
+					alert("Aprovado!");
+				}
+				else{
+					alert("Reprovado.");
+				}
+			}
+		</script>
+
+	</body>
+</html>

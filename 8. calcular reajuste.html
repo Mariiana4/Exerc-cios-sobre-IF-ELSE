@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Calcular reajuste</title>
+</head>
+
+<body>
+<!-- EXERCÍCIO 8
+
+	As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver um script que calculará os reajustes. 
+
+	Faça um script que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+    
+    salários até R$ 280,00 (incluindo) : aumento de 20%
+    salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+    salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+    salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+
+    o salário antes do reajuste;
+    o percentual de aumento aplicado;
+    o valor do aumento;
+    o novo salário, após o aumento.-->
+
+	<script type="text/javascript">
+
+		var salario = prompt("Digite seu salário: ");
+		var sal1 = parseFloat(20*salario)/100;
+		var novoS1 = parseFloat (salario + sal1);
+
+		if(salario<=280){
+			alert("Seu salário era: " + salario + ". Você teve um aumento de 20%, equivalente a " + sal1 + ". Seu novo salário é: " + novoS1);
+		}
+	</script>
+
+</body>
+</html>

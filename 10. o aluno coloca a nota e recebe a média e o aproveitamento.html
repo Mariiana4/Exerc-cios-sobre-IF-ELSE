@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>O aluno coloca a nota e recebe uma média e um conceito</title>
+</head>
+
+<body>
+	<!-- EXERCÍCIO 10
+
+	Faça um script que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média. A atribuição de conceitos obedece à tabela abaixo: 
+
+	Média de aproveitamento  -  conceito
+
+	       entre 9.0 e 10.0  -  A
+
+	        entre 7.5 e 9.0  -  B
+
+	        entre 6.0 e 7.5  -  C
+
+           	entre 4.0 e 6.0  -  D
+
+	       entre 4.0 e zero  -  E
+
+	O algoritmo deve mostrar numa janela de alert as notas, a média, o conceito correspondente e a mensagem “APROVADO” se o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E. -->
+
+	<script type="text/javascript">
+
+		var nota1 = parseFloat (prompt("Escreva sua primeira nota: "));
+		var nota2 = parseFloat (prompt("Escreva sua segunda nota: "));
+		var media = (nota1+nota2)/2;
+
+		if(media>=9 && media<=10){
+			alert("1º nota: " + nota1 + " | 2º nota: " + nota2 + " | Média: " + media + " | Conceito: A | APROVADO! ");
+		} else 
+		if(media<9 && media>=7.5){
+			alert("1º nota: " + nota1 + " | 2º nota: " + nota2 + " | Média: " + media + " | Conceito: B | APROVADO!" );
+		} else
+		if(media<7.5 && media>=6){
+			alert("1º nota: " + nota1 + " | 2º nota: " + nota2 + " | Média: " + media + " | Conceito: C | APROVADO!");
+		} else
+		if(media<6 && media>=4){
+			alert("1º nota: " + nota1 + " | 2º nota: " + nota2 + " | Média: " + media + " | Conceito: D | REPROVADO!");
+		} else
+		if(media<4 && media>=0){
+			alert("1º nota: " + nota1 + " | 2º nota: " + nota2 + " | Média: " + media + " | Conceito: E | REPROVADO!");
+		}
+
+		
+	</script>
+</body>
+</html>
+
